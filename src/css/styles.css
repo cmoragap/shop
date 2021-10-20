@@ -1,0 +1,122 @@
+.products {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    
+    background: white;
+    width:200px;
+    height: 250px;
+    margin: 10px;
+}
+.card:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+}
+.summaryContainer {
+    display: flex;
+    width: 40%;
+    margin:auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.summaryCard {
+    display: flex;
+    background: white;
+    width: auto;
+    height: 100px;
+    margin: 10px;
+    /* border-top: 2px solid rgb(233, 226, 226); */
+}
+.topBar {
+    text-align: right;
+    color: white;
+    overflow: hidden;
+    background-color: black;
+    margin:4px;
+}
+
+.sumarryContainer div {
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+.summaryProducts {
+    flex:2;
+    border-top: 2px solid rgb(233,226,226);
+}
+.summaryTotal {
+    flex:1;
+    border-top: 2px solid rgb(233,226,226)
+}
+.productDetail {
+    display:flex;
+}
+.imgMain {
+    display:flex;
+    justify-content: center;
+}
+.imgDet {
+    border: 2px solid rgb(218, 208, 208);
+    width: 50px;
+    vertical-align: middle;
+}
+.centerAlign {
+    text-align: center;
+}
+.whiteBar {
+    background-color: white;
+    margin:4px;
+    overflow: hidden;
+}
+.logoImg {
+    width: 30px;
+    float: right;
+}
+.blackBar {
+    width:auto;
+    height: 30px;
+    background-color: black;
+    margin-top: 10px;
+}
+.decoBar1 {
+    width:auto;
+    height:50px;
+    background-color: black;
+}
+.decoBar2 {
+    width: auto;
+    height: 30px;
+    background-color: rgb(48, 51, 54);
+}
+.lighterLetter {
+    color: lightsteelblue;
+    font-size: 6px;
+    margin-left: 10px;
+}
+.buttonWhite {
+    width: 100%;
+    background-color: white;
+}
+.buttonBlack {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+}
+.buttonMinusPlus{
+    border:none;
+    padding:0;
+    background: none;
+    width: 15px;
+}
+.buttonWrapper {
+    border:1px solid gray;
+    display:inline-block;
+    
+
+}
