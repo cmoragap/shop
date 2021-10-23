@@ -25,8 +25,8 @@ const ProductDetail = (props) => {
         <div className="buttonWrapper">
         
           <button className="buttonMinusPlus" onClick={()=>modProductQt(props.product.id,"-")} >-</button>
-          <input value={props.product.qty} disabled={true} style={{width:"15px",textAlign:"center",border:"none"}}/>
-          <button className="buttonMinusPlus" onClick={()=>modProductQt(props.product.id,"+")}>+</button>
+          <input data-testid="qty" value={props.product.qty} disabled={true} style={{width:"15px",textAlign:"center",border:"none"}}/>
+          <button data-testid="plus_btn" className="buttonMinusPlus" onClick={()=>modProductQt(props.product.id,"+")}>+</button>
         </div>
       </div>
     </div>

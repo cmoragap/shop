@@ -1,14 +1,25 @@
-import {render,screen,cleanup} from '@testing-library/react'
-import ShoppingCartContext from '../../contexts/shoppingCartContext'
-import ProductList from '../../components/ProductList'
+import React from "react"
+import {render,cleanup,fireEvent} from '@testing-library/react'
+import DecoBar from '../../components/decoBar'
+import Summary from '../../components/purchaseSummary'
+import ProductDet from '../../components/productDetail'
+
 afterEach(()=>{
     cleanup()
 })
-test("Trajo uno de los datos", () => {
-    render(
-      <ShoppingCartContext.Provider value={{products}}>
-        <ProductList />
-      </ShoppingCartContext.Provider>
-    );
-    expect(screen.getByText("Hello stranger!")).toBeInTheDocument();
+test("Tiene_el_rótulo_correcto", () => {
+    const {getByTestId} = render(<DecoBar/>);
+    const headerElement = getByTestId("header")
+    expect(headerElement.textContent).toBe("Shopping Cart")
   });
+
+// test("modifica_cantidad",()=> {
+//   const {getByTestId} = render(<ProductDet/>)
+//   const plus_btn = getByTestId("plus_btn")
+  
+//   const qty = getByTestId("qty")
+//   fireEvent.click(plus_btn)
+//   expect(qty.value).toBe(1)
+
+
+// })
