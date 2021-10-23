@@ -1,3 +1,4 @@
+# vamos a cambiar este archivo
 Please download and npm i, then npm start
 The project works but there were some issues that i did not have time to finish like testing. 
 # Getting Started with Create React App
